@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-warm-white text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-forest-800 text-white rounded-lg font-medium hover:bg-forest-700 transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply px-6 py-3 bg-white text-forest-800 border-2 border-forest-800 rounded-lg font-medium hover:bg-sand-50 transition-colors duration-200;
+  }
+}
